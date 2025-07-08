@@ -1,5 +1,0 @@
-Protocol,Port,Domain,Request Status,Screenshot Path, Source Path
-http,80,192.168.183.54,Successful,/home/samson/Desktop/Scripts/Finding/screens/http.192.168.183.54.png,/home/samson/Desktop/Scripts/Finding/source/http.192.168.183.54.txt
-http,80,192.168.183.111,Successful,/home/samson/Desktop/Scripts/Finding/screens/http.192.168.183.111.png,/home/samson/Desktop/Scripts/Finding/source/http.192.168.183.111.txt
-http,80,192.168.183.206,BadStatus,/home/samson/Desktop/Scripts/Finding/screens/http.192.168.183.206.png,/home/samson/Desktop/Scripts/Finding/source/http.192.168.183.206.txt
-http,80,192.168.183.154,BadStatus,/home/samson/Desktop/Scripts/Finding/screens/http.192.168.183.154.png,/home/samson/Desktop/Scripts/Finding/source/http.192.168.183.154.txt
