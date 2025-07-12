@@ -16,7 +16,7 @@ then echo "Specify subnet ip"
 return 1
 else
 
-sudo nmap -sn 192.168.183.0/24 | grep 'Nmap scan report' | awk '{print $5}' > hosts.txt
+sudo nmap -sn $subnet | grep 'Nmap scan report' | awk '{print $5}' > hosts.txt
 
 fi
 }
@@ -26,8 +26,8 @@ fi
 screenshot()
 {
   awk '{print "http://" $0}' hosts.txt > url.txt
-  eyewitness --web -f url.txt -d Finding --no-prompt
-  mv hosts.txt url.txt geckodriver.log Finding/
+  eyewitness --web -f url.txt -d ~/Desktop/Finding --no-prompt
+  mv hosts.txt url.txt geckodriver.log ~/Desktop/Finding/
   echo " Nmap scan is complete! check output in Findings hosts.txt"
  
 }
@@ -35,7 +35,7 @@ screenshot()
 httpRecon()
 {
    
-  cd Finding
+  cd ~/Desktop/Finding
   grep "Successful" Requests.csv | awk -F',' '{print $3}' > http200.txt
 
   echo "Recon is done!"
