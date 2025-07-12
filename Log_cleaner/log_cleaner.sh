@@ -12,3 +12,9 @@ echo "log content erased!"
 
 
 log_cleaner
+
+
+
+
+
+
